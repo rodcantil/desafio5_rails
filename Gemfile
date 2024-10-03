@@ -56,4 +56,4 @@ group :test do
   gem "selenium-webdriver"
 end
 gem 'pagy', '~> 9.0'
-gem 'faker', '~> 2.23
+gem 'faker', '~> 2.23'
