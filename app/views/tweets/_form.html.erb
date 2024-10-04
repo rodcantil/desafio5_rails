@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+  <div class="mb-2">
+    <%= form.label "Mensaje", class:"mb-2", style: "display: block"  %>
+    <%= form.text_field :description,  class:"col-12 mb-2 form-control", rows:"3" %>
+  </div>
+
+  <div class="mb-2">
+    <%= form.label "Usuario", class:"mb-2", style: "display: block" %>
+    <%= form.text_field :username , class:"col-12 mb-3 form-control"%>
   </div>
 
   <div>
-    <%= form.label :username, style: "display: block" %>
-    <%= form.text_field :username %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit "Ingresar", class:"btn btn-dark" %>
   </div>
 <% end %>

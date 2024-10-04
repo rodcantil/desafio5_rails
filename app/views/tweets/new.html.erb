@@ -1,11 +1,12 @@
-<% content_for :title, "New tweet" %>
+<% content_for :title, "Nuevo tweet" %>
 
-<h1>New tweet</h1>
+<h1 class="text-center">Nuevo tweet</h1>
 
-<%= render "form", tweet: @tweet %>
-
-<br>
-
-<div>
-  <%= link_to "Back to tweets", tweets_path %>
+<div class="card col-8 mx-auto border-secondary">
+    <div class="card-body">
+      <h6 class="card-subtitle text-body-secondary mb-2"><%= render "form", tweet: @tweet %></h6>
+      <div class="d-flex justify-content-end">
+      <%= link_to "Volver", tweets_path, class:"btn btn-sm btn-secondary mx-2" %>
+      </div>
+    </div>
 </div>

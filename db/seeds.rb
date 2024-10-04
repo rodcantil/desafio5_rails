@@ -1,4 +1,4 @@
-20.times do
-    Tweet.create(description: Faker::TvShows::GameOfThrones.character, username: Faker::TvShows::GameOfThrones.quote)
+100.times do
+    Tweet.create(description: Faker::TvShows::GameOfThrones.quote, username: Faker::TvShows::GameOfThrones.character)
 end
 puts "Tweets agregados"
