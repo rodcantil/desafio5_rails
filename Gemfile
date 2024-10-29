@@ -55,6 +55,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-gem 'pagy', '~> 9.0'
+gem 'pagy', '~> 9.1'
 gem 'faker', '~> 2.23'
 gem 'pg_search'
